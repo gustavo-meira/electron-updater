@@ -1,0 +1,14 @@
+appId: com.wolfi.app
+productName: Teste Electron Updater
+copyright: Copyright © 2023 Gustavo Wolfi
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish:
+  provider: github
+  token: ${{ secrets.GITHUB_TOKEN }}
