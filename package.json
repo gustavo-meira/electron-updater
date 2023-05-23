@@ -2,10 +2,22 @@
   "private": true,
   "name": "electron-updater",
   "description": "Teste de atualização de aplicação com nextron",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "license": "ISC",
   "repository": {
     "type": "git",
+    "releaseType": "release",
     "url": "git@github.com:gustavo-meira/electron-updater.git"
+  },
+  "build": {
+    "appId": "com.wolfi.electron-updater",
+    "productName": "electron-updater",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
   },
   "author": "Gustavo Wolfi <gmeira.antonio@gmail.com>",
   "main": "app/background.js",
